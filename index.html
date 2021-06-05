@@ -10,10 +10,10 @@
 <body>
     
     <div id="root">
-        <img v-bind:src="picture" v-bind:alt="firstName">
+        <img :class="gender" v-bind:src="picture" v-bind:alt="firstName">
         <h1>{{firstName}} {{lastName}}</h1>
         <h3>Email: {{email}}</h3>
-        <button>Get Random User</button>
+        <button :class="gender">Get Random User</button>
     </div>
 
 
